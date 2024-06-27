@@ -1,0 +1,6 @@
+class RestaurantCreation {
+
+  async click
+
+
+}
