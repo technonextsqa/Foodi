@@ -1,22 +1,22 @@
 class LoginPage {
   constructor(page) {
-    this.page = page;
+    this.page1 = page;
   }
 
   async navigate() {
-    await this.page.goto("https://cms-stage.foodibd.com/auth/login"); // Replace with your actual login page URL
+    await this.page1.goto("https://cms-dev.foodibd.com/auth/login"); // Replace with your actual login page URL
   }
 
   async setUsername(email) {
-    await this.page.fill('//input[@id=":r0:"]', email);
+    await this.page1.fill('//input[@id=":r0:"]', email);
   }
 
   async setPassword(password) {
-    await this.page.fill('//input[@id=":r1:"]', password);
+    await this.page1.fill('//input[@id=":r1:"]', password);
   }
 
   async clickLoginButton() {
-    await this.page.click('//button[@type="submit"]');
+    await this.page1.click('//button[@type="submit"]');
   }
 
   async login(email, password) {
